@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bb-demo
+  name: tetris-demo
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      bb: web
+      app: tetris
   template:
     metadata:
       labels:
-        bb: web
+        app: tetris
     spec:
       containers:
-      - name: bb-site
+      - name: tetris-site
         image: ociotec/tetris
