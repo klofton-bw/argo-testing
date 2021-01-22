@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: bb-site
-        image: bulletinboard:1.0
+        image: ociotec/tetris
